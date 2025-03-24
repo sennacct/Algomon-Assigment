@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--tab title-->
+    <title>Contact us</title>
+    <link rel="stylesheet" href="style.css"><!--CSS LINK-->
+</head>
+<body>
+    <header>
+        <!-- The nav bar of the website that contains all the links to other pages-->
+        <nav class="navbar">
+            <ul>
+                <!--Title on the NavBar-->
+               <li><h1 class="edge-text">Contact Us</h1></li>
+               <!--Link to home page-->
+               <li><a href="index.html"><button class="main-button">Home</button></a></li>
+               <!--Link to About Us page-->
+               <li><a href="aboutus.html"><button class="main-button">About us</button></a></li>
+               <!--Link to Gallery page-->
+                <li><a href="pictures.html"><button class="main-button">Gallery</button></a></li>
+                <!--Link to Contact Us page-->
+                <li><a href="contact.html"><button class="main-button">Contact us</button></a></li>
+                <!--Link to Downloads page-->
+                <li><a href="downloads.html"><button class="main-button">Download</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main class="container">
+
+<div>
+    <!--Page Title-->
+    <h1 class="strong-title">Contact Us!</h1>
+
+    <br> <!--Add 1 space between -->
+
+    <p>Please, fill the form:</p>
+
+    <br><!--Add 1 space between -->
+</div>
+
+<!--creates a form--> <!--Javascript ID-->
+<form id="contactForm"> 
+    <fieldset class="group"> <!--to group form elements -->
+        <div class="field">
+            <!-- Asking for full name -->
+            <label for="name">Full name:</label>
+            <!-- Name input form field **REQUIRED** -->
+            <input type="text" name="name" id="name" required> 
+        </div>
+
+    <br><!--Add 1 space between -->
+
+        <div class="field">
+            <!-- Asking for full name -->
+            <label for="email">Email:</label>
+            <!-- Email input form field **REQUIRED**-->
+            <input type="email" name="email" id="email" required> 
+        </div>
+    </fieldset>
+
+    <br> <!--Add 1 space between -->
+
+    <!--Text box for message-->
+    <div class="field">
+        <!--Ask the user to leave a mesage below-->
+        <label>Leave your message below:</label>
+        <!--Text box input form for the message-->
+        <textarea rows="6" style="width: 26em" id="message" name="message"></textarea> 
+    </div>
+
+    <br> <!--Add 1 space between -->
+
+    <!-- Submit button -->
+    <button type="submit" class="main-button">Send</button> 
+</form>
+
+
+
+</main>
+ <!--footer contaning a bar with link to social media pages-->
+    <footer>
+        <!--Text on footer bar-->
+        <h2 class="edge-text">Visit our social media pages</h2>
+        <!--Link to Instagram page-->
+        <a href="https://www.instagram.com"><button class="main-button">Instagram</button></a>
+        <!--Link to Facebok page-->
+        <a href="https://www.facebook.com"><button class="main-button">Facebook</button></a>
+    </footer>
+    <script src="script.js"></script> <!--Javascript link-->
+</body>
+</html>

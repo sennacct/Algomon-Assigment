@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=MedievalSharp&family=Modern+Antiqua&display=swap');
+/* Import fonts above */
+
+/* ********DEFAULT TO ALL PAGES******** */
+
+* { /* default margin and padding */
+    margin: 0;
+    padding: 0;
+}
+
+/*header style and navbar */
+header {
+    justify-content: space-between; /* position elements at the ends (left and right) */
+    align-items: center; /* content in the center */
+    padding: 10px 15px; /* add padding inside the header */
+    background: linear-gradient(135deg, #B0BEC5, #607D8B); /* header gradient background color */
+    display: flex;
+    border-bottom: 3px solid #607D8B; /* creates a tiny line at the bottom of the header */
+}
+
+/*navbar style*/
+.navbar {
+    display: flex;
+    justify-content:left; /* left navbar items */
+    align-items: left; /*left navbar items */
+    width: 100%; /* ensures navbar takes full width */
+}
+.navbar ul {
+    display: flex;
+    gap: 20px; /* adds space between navbar buttons */
+    list-style-type: none; /* removes default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+/*items distance*/
+.container {
+    margin:1.5%; /* margin between sections */
+    align-items:normal; /* sections align normally */
+    display: flex;
+    justify-content: space-between; /* space between items */
+    flex-direction: column; /* stack items vertically */
+} 
+
+/* NAV bar buttons + Footer Buttons */
+.main-button {
+    width: 100px; /* button width */
+    height: 30px; /* button height */
+    background-color: blueviolet; /* button background color */
+    color: black; /* button text color */
+    font-family: "MedievalSharp", cursive; /* font style */
+    font-size: 16px;
+    font-weight: bolder; 
+    cursor: pointer; /* changes cursor to pointer*/
+    transition: transform 300ms ease-in-out; /* smooth transition */
+    border-radius: 10px; /* rounded corners */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* shadow effect behind the button */
+}
+
+/* Text on the NAV BAR + FOOTER */
+.edge-text{
+    color: #4B0082; /* text color */
+    margin: 0.5%; /* margin around text */
+    font-size: 30px;
+    font-family: "MedievalSharp", cursive; /* font style */
+    white-space: nowrap; /* ensures text stays in one line */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* shadow behind the text */
+}
+
+/* **** Default font, fontsize, font color, background color to ALL PAGES **** */
+body {
+    height: auto; /* define the height of the entire page */
+    box-sizing: border-box; /* makes sure elements stay within their container */
+    background-color: #121212; /* default dark background color for all pages */
+    font-family: "Modern Antiqua", serif; /* default font style */
+    font-size: 120%; /* font size for body text */
+    color: aliceblue; /* text color */
+}
+
+/* It makes some words in bold and blue using the "strong-title" class*/
+.strong-title {
+    color: blueviolet; /* changes color of bold text */
+}
+
+/* ********************** */
+
+
+
+
+/* ****Home Page**** */
+
+/* Title style */
+header h1 {
+    margin: 0; /* removes default margin from title */ 
+}
+
+.homeimage {
+    width: 25%;   /* image size on the home page */
+    height: auto;
+    border-radius: 15px; /* rounded corners for the image */
+}
+/* ********************** */
+
+
+
+
+/* ****Gallery Page**** */
+
+/*images flexbox container*/
+.container-gallery {
+    margin: 3%;
+    align-items:center; /* center images vertically */
+    display: flex;
+    gap: 15px; /* adds space between images */
+}
+
+.text-container {
+    max-width: 700px; /* adjusts the width of the text container */
+}
+
+.image {
+    width: 250px; /* image width */
+    height: 250px; /* image height */
+    border-radius: 50%; /* makes the image circular */
+    object-fit: cover; /* ensures image covers the container without distorting */
+    transition: transform 200ms ease-in-out; /* smooth transition effect */
+}
+
+/*image effect*/
+.image:hover {
+    transform: scale(1.1); /*enlarges the image */
+}
+
+/* ********************** */
+
+
+
+
+
+/* **** DOWNLOAD BUTTON ONLY **** */
+
+.download-button {
+    width: 420px; /* button width */
+    height: 55px; /* button height */
+    border-radius: 10px; /* rounded corners */
+    background-color: blueviolet; /* button background color */
+    color: black; /* button text color */
+    font-family: "MedievalSharp", cursive; /* font style */
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer; /* changes cursor to pointer */
+    transition: transform 200ms ease-in-out; /* smooth transition */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* text shadow for effect */
+}
+
+/* button hover effect */
+button:hover {
+    transform: scale(1.05); /* it scales the button*/
+}
+/* ********************** */
+
+
+
+
+
+/* **** FOOTER SECTION (DEFAULT TO ALL PAGES) **** */
+footer {
+    justify-content: space-between; /* positions elements at the ends (left and right) */
+    align-items: center; /* centers content vertically */
+    padding: 10px 20px; /* padding inside footer */
+    background: linear-gradient(135deg, #B0BEC5, #607D8B); /* footer background gradient */
+    color: white; /* text color */
+    bottom: 0; /* positions footer at the very bottom of the page */
+    border-top: 3px solid #607D8B; /* creates a small line at the top of the footer */
+}
+/* ********************** */
+
+
+
+
+
+/* *****Contact Us Page***** */
+
+/* Removes the default fieldset border */
+fieldset {
+    border: 0;
+}
+
+/* Styles the textarea (message box) */
+textarea {
+    border-radius: 5px; /* rounded corners for textarea */
+}
+
+/* Adds spacing between form fields */
+.field {
+    margin-bottom: 1em; /* adds space below each form field */
+}
+
+.field label {
+    margin-bottom: 0.2em; /* small gap between label and input field */
+    display:block; /* forces label to be on a new line */
+}
+
+/* ********************** */
