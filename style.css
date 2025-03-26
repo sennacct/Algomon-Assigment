@@ -13,16 +13,17 @@ header {
     justify-content: space-between; /* position elements at the ends (left and right) */
     align-items: center; /* content in the center */
     padding: 10px 15px; /* add padding inside the header */
-    background: linear-gradient(135deg, #B0BEC5, #607D8B); /* header gradient background color */
+    background: linear-gradient(135deg, #B0BEC5, #737374); /* header gradient background color */
     display: flex;
     border-bottom: 3px solid #607D8B; /* creates a tiny line at the bottom of the header */
+    width: auto;
 }
 
 /*navbar style*/
 .navbar {
     display: flex;
-    justify-content:left; /* left navbar items */
-    align-items: left; /*left navbar items */
+    justify-content:right; /* right navbar items */
+    align-items: right; /*right navbar items */
     width: 100%; /* ensures navbar takes full width */
 }
 .navbar ul {
@@ -36,7 +37,7 @@ header {
 /*items distance*/
 .container {
     margin:1.5%; /* margin between sections */
-    align-items:normal; /* sections align normally */
+    align-items:center; /* sections align to center */
     display: flex;
     justify-content: space-between; /* space between items */
     flex-direction: column; /* stack items vertically */
@@ -44,12 +45,12 @@ header {
 
 /* NAV bar buttons + Footer Buttons */
 .main-button {
-    width: 100px; /* button width */
-    height: 30px; /* button height */
+    width: 140px; /* button width */
+    height: 40px; /* button height */
     background-color: blueviolet; /* button background color */
     color: black; /* button text color */
     font-family: "MedievalSharp", cursive; /* font style */
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bolder; 
     cursor: pointer; /* changes cursor to pointer*/
     transition: transform 300ms ease-in-out; /* smooth transition */
@@ -61,10 +62,11 @@ header {
 .edge-text{
     color: #4B0082; /* text color */
     margin: 0.5%; /* margin around text */
-    font-size: 30px;
+    font-size: 35px;
     font-family: "MedievalSharp", cursive; /* font style */
     white-space: nowrap; /* ensures text stays in one line */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* shadow behind the text */
+    text-decoration: none; /* removes the underline from link */
 }
 
 /* **** Default font, fontsize, font color, background color to ALL PAGES **** */
@@ -82,6 +84,17 @@ body {
     color: blueviolet; /* changes color of bold text */
 }
 
+/* It makes a column in the center of the pages */
+.column {
+    width: 80%; /* width coloumn */
+    max-width: 900px; /* max limit */
+    background-color: rgb(31, 29, 30); /* color */
+    margin: 0 auto; /* it centers horizontally*/
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid blueviolet;
+}
+
 /* ********************** */
 
 
@@ -95,9 +108,19 @@ header h1 {
 }
 
 .homeimage {
-    width: 25%;   /* image size on the home page */
+    width: 50%;   /* image size on the home page */
     height: auto;
     border-radius: 15px; /* rounded corners for the image */
+    transition: transform 200ms ease-in; /* smooth transition effect */
+}
+
+.homeimage:hover {
+    transform: scale(1.05); /*enlarges the image */
+}
+
+.textalign {
+    text-align: center; /* the text is going to be in the center of the webpage */
+    max-width: 700px; /* adjusts the width of the text container */
 }
 /* ********************** */
 
@@ -153,6 +176,7 @@ header h1 {
     margin-top: 10px;
     margin-bottom: 10px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* text shadow for effect */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* shadow effect behind the button */
 }
 
 /* button hover effect */
@@ -203,4 +227,26 @@ textarea {
     display:block; /* forces label to be on a new line */
 }
 
+.form-container {
+    display: flex; /* Uses Flexbox to align elements in a row */
+    align-items: center; /* Aligns the form and image vertically */
+    justify-content: space-between; /* Distributes space between items */
+    gap: 10px; /* Adds spacing between the form and the image */
+}
+
+.contactusimage {
+    width: 25%;
+   height: auto;
+   border-radius: 25px;
+}
+
+   .container-contact {
+    margin:1.5%; /* margin between sections */
+    align-items:normal; /* sections align normal */
+    display: flex;
+    justify-content: space-between; /* space between items */
+    flex-direction: column; /* stack items vertically */
+} 
+
 /* ********************** */
+

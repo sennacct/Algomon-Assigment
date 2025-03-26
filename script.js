@@ -63,4 +63,3 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("Your download for Mac is starting!"); // Display an alert when the Mac button is clicked
     });
 });
-

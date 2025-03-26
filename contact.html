@@ -9,11 +9,11 @@
 </head>
 <body>
     <header>
+        <!--Title on the NavBar--> <!--href empty only to remove the title as a text-->
+        <a href="" class="edge-text"><h4>Contact Us</h4></a>
         <!-- The nav bar of the website that contains all the links to other pages-->
         <nav class="navbar">
             <ul>
-                <!--Title on the NavBar-->
-               <li><h1 class="edge-text">Contact Us</h1></li>
                <!--Link to home page-->
                <li><a href="index.html"><button class="main-button">Home</button></a></li>
                <!--Link to About Us page-->
@@ -28,20 +28,21 @@
         </nav>
     </header>
 
-<main class="container">
+<main class="container-contact"> <!--Class container created only for this page-->
 
 <div>
     <!--Page Title-->
-    <h1 class="strong-title">Contact Us!</h1>
+    <h1 class="strong-title">Have questions? We're here to help!</h1>
 
     <br> <!--Add 1 space between -->
 
-    <p>Please, fill the form:</p>
-
-    <br><!--Add 1 space between -->
+    <p>Please, fill the form:</p>  
 </div>
 
+<br><!--Add 1 space between -->
+
 <!--creates a form--> <!--Javascript ID-->
+<div class="form-container">
 <form id="contactForm"> 
     <fieldset class="group"> <!--to group form elements -->
         <div class="field">
@@ -76,9 +77,9 @@
     <!-- Submit button -->
     <button type="submit" class="main-button">Send</button> 
 </form>
-
-
-
+<!--Rabbit Image for contact us page-->
+<img src="rabbithelper.jpg" alt="Rabbit Helper ContactUs" class="contactusimage">
+</div>
 </main>
  <!--footer contaning a bar with link to social media pages-->
     <footer>
